@@ -4,5 +4,6 @@
 PROJECTNAME = 'collective.blogstarentry'
 
 ADD_PERMISSIONS = {
-    # -*- extra stuff goes here -*-
+    'BlogEntry': 'collective.blogstarentry: Add BlogEntry',
+    'Blog': 'collective.blogstarentry: Add Blog',
 }

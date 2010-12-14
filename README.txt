@@ -1,17 +1,3 @@
-.. contents::
-
-.. Note!
-   -----
-   Update the following URLs to point to your:
-
-   - code repository
-   - bug tracker
-   - questions/comments feedback mail
-   (do not set a real mail, to avoid spams)
-
-   Or remove it if not used.
-
-- Code repository: http://svn.somewhere.com/...
-- Questions and comments to somemailing_list
-- Report bugs at http://bug.somewhere.com/..
-
+Introduction
+============
+This product is an extension for collective.blog.star to manage blogs with some special archetypes (Blog and BlogEntry).

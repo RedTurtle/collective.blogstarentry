@@ -3,8 +3,26 @@
     xmlns:five="http://namespaces.zope.org/five"
     i18n_domain="collective.blogstarentry">
 
-  <!-- configure your content components here -->
-  
-  <!-- -*- extra stuff goes here -*- -->
+  <class class=".blogentry.BlogEntry">
+	  <require
+	    permission="zope2.View"
+	    interface="..interfaces.IBlogEntry"
+	    />
+	  <require
+	  	permission="cmf.ModifyPortalContent"
+	    set_schema="..interfaces.IBlogEntry"
+	    />
+  </class>
 
+  <class class=".blog.Blog">
+	  <require
+	    permission="zope2.View"
+	    interface="..interfaces.IBlog"
+	    />
+	  <require
+	  	permission="cmf.ModifyPortalContent"
+	    set_schema="..interfaces.IBlog"
+	    />
+  </class>
+  
 </configure>
