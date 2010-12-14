@@ -5,7 +5,7 @@
  <property name="title" i18n:translate="">Blog entry</property>
  <property name="description"
       i18n:translate="">A simple entry for blog folders.</property>
- <property name="content_icon">document_icon.gif</property>
+ <property name="content_icon">++resource++collective.blogstarentry.images/blogentry.png</property>
  <property name="content_meta_type">BlogEntry</property>
  <property name="product">collective.blogstarentry</property>
  <property name="factory">addBlogEntry</property>
@@ -13,7 +13,7 @@
  <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types"/>
- <property name="allow_discussion">False</property>
+ <property name="allow_discussion">True</property>
  <property name="default_view">document_view</property>
  <property name="view_methods">
   <element value="document_view"/>
