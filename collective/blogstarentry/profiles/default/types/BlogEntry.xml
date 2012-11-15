@@ -9,14 +9,14 @@
  <property name="content_meta_type">BlogEntry</property>
  <property name="product">collective.blogstarentry</property>
  <property name="factory">addBlogEntry</property>
- <property name="immediate_view">document_view</property>
+ <property name="immediate_view">newsitem_view</property>
  <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types"/>
  <property name="allow_discussion">True</property>
- <property name="default_view">document_view</property>
+ <property name="default_view">newsitem_view</property>
  <property name="view_methods">
-  <element value="document_view"/>
+  <element value="newsitem_view"/>
  </property>
  <alias from="(Default)" to="(dynamic view)"/>
  <alias from="edit" to="atct_edit"/>

@@ -1,8 +1,13 @@
 Changelog
 =========
 
-1.0.0 - Unreleased
-----------------
+1.1.0 - (unreleased)
+--------------------
+* Now the object extends AT News, and have an image [micecchi]
+* Fixed blog views [micecchi]
+
+1.0.0 - (2011/08/14)
+--------------------
 
 * Initial release
 

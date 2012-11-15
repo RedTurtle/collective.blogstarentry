@@ -34,11 +34,14 @@ setup(name='collective.blogstarentry',
       include_package_data=True,
       zip_safe=False,
       install_requires=['setuptools',
+                        'collective.blog.view',
                         ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),
-      test_suite = 'collective.blogstarentry.tests.test_docs.test_suite',
+      test_suite='collective.blogstarentry.tests.test_docs.test_suite',
       entry_points="""
-      # -*- entry_points -*- 
+      # -*- entry_points -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
