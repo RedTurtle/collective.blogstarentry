@@ -5,6 +5,7 @@ Changelog
 --------------------
 * Now the object extends AT News, and have an image [micecchi]
 * Fixed blog views [micecchi]
+* Added dependency to collective.blog.view [micecchie]
 
 1.0.0 - (2011/08/14)
 --------------------
