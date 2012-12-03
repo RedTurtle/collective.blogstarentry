@@ -4,3 +4,6 @@ class IBlog(Interface):
     """Marker interface for Blog folder"""
 
 
+class IBlogStarEntryLayer(Interface):
+    """
+    """
