@@ -3,6 +3,11 @@
   <permissions>
 	<permission name="collective.blogstarentry: Add BlogEntry" acquire="True">
       <role name="Contributor" />
+      <role name="Site Administrator" />
+    </permission>
+    <permission name="collective.blogstarentry: Add Blog" acquire="True">
+      <role name="Contributor" />
+      <role name="Site Administrator" />
     </permission>
   </permissions>
 </rolemap>
