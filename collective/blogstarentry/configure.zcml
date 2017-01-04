@@ -9,7 +9,18 @@
   <!-- Include the sub-packages that use their own configure.zcml files. -->
   <include package=".browser" />
   <include package=".content" />
-  
+
+
+  <permission
+    id="collective.blogstarentry.permissions.AddBlogEntry"
+    title="collective.blogstarentry: Add BlogEntry"
+  />
+
+  <permission
+    id="collective.blogstarentry.permissions.AddBlog"
+    title="collective.blogstarentry: Add Blog"
+  />
+
   <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
@@ -18,7 +29,21 @@
       description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  
+
   <!-- -*- extra stuff goes here -*- -->
+
+  <genericsetup:importStep
+      name="collective.blogstarentry-postInstall"
+      title="collective.blogstarentry post_install import step"
+      description="Post install import step from collective.blogstarentry"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+  <!-- <genericsetup:importStep
+      name="collective.blogstarentry-uninstall"
+      title="collective.blogstarentry uninstall import step"
+      description="Import step run during ininstalling collective.blogstarentry"
+      handler=".setuphandlers.uninstall">
+  </genericsetup:importStep> -->
 
 </configure>
