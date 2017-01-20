@@ -22,4 +22,4 @@ def post_install(context):
 
     # Do something during the installation of this package
     api.portal.set_registry_record(
-        'blog_types', u'BlogEntry', interface=IBlogEntryRetriever)
+        'blog_types', (u'BlogEntry',), interface=IBlogEntryRetriever)
